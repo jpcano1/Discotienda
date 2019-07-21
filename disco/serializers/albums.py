@@ -11,7 +11,6 @@ from .ratings import AlbumRatingModelSerializer
 
 """ Album model serializer """
 class AlbumModelSerializer(serializers.ModelSerializer):
-    rating = AlbumRatingModelSerializer(read_only=True)
 
     """ Meta Class """
     class Meta:
@@ -24,12 +23,7 @@ class AlbumModelSerializer(serializers.ModelSerializer):
             'price',
             'sold_by',
             'quantities',
-            'rating',
         )
-
-        read_only_fields = [
-            'rating',
-        ]
 
     """ Validate the user doesn't have repeated albums 
     and cover exists. """
@@ -46,5 +40,6 @@ class AlbumModelSerializer(serializers.ModelSerializer):
         album = Album.objects.filter(title=data['title'], artist=data['artist'])
         if album:
             album.quantities += 1
+            album.sold_by.append(data['sold_by'][0])
             album.save()
         return data
