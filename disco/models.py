@@ -32,9 +32,9 @@ class Album(DiscotiendaModel):
 class AlbumRating(RatingModel):
     """ The model to rate an specific album """
 
-    rated_song = models.ForeignKey('Album',
+    rated_album = models.ForeignKey('Album',
                                    on_delete=models.CASCADE,
-                                   related_name="rated_song")
+                                   related_name="rated_album")
 
     rating_user = models.ForeignKey(
         'users.User',
@@ -45,4 +45,4 @@ class AlbumRating(RatingModel):
 
     def __str__(self):
         """ Returns the rate and the album rated """
-        return "{album} rated with: {rate}".format(album=str(self.rated_song), rate=self.rating)
+        return "{album} rated with: {rate}".format(album=str(self.rated_album), rate=self.rating)

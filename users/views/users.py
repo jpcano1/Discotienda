@@ -15,11 +15,13 @@ from users.serializers import (UserModelSerializer,
                                AccountVerificationSerializer,
                                UserSignUpSerializer)
 from users.serializers.profiles import ProfileModelSerializer
+from disco.serializers import AlbumModelSerializer
 
 
 # Permissions
 from rest_framework.permissions import (AllowAny,
                                         IsAuthenticated)
+from users.permissions import IsAccountOwner
 
 """ User viewset in which I'm going to make the views for a
 CRUD system for users based on permissions, handles signup,
@@ -39,6 +41,10 @@ class UserViewSet(viewsets.GenericViewSet,
             permissions = [AllowAny]
         if self.action in ['list', 'retrieve']:
             permissions = [IsAuthenticated]
+        if self.action in ['update', 'partial_update']:
+            permissions = [IsAccountOwner, IsAuthenticated]
+        else:
+            permissions = [IsAuthenticated]
         return [p() for p in permissions]
 
     """ The retrieve mixin view, allows to see the user detail """
@@ -50,7 +56,7 @@ class UserViewSet(viewsets.GenericViewSet,
 
         data = {
             'user': response.data,
-            'albums': albums
+            'albums': AlbumModelSerializer(albums, many=True).data
         }
         response.data = data
         return response

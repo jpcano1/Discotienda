@@ -22,4 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     path('', include(('users.urls', 'users'), namespace="users")),
+    path('', include(('disco.urls', 'disco'), namespace='albums'))
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
