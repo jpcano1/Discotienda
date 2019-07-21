@@ -4,6 +4,7 @@
 from rest_framework import status, viewsets, mixins
 from rest_framework.decorators import action
 from rest_framework.response import Response
+from rest_framework.generics import get_object_or_404
 
 # Models
 from users.models import User
@@ -36,12 +37,9 @@ class UserViewSet(viewsets.GenericViewSet,
     lookup_field = 'username'
 
     def get_permissions(self):
-        permissions = []
         if self.action in ['signup', 'login', 'verify']:
             permissions = [AllowAny]
-        if self.action in ['list', 'retrieve']:
-            permissions = [IsAuthenticated]
-        if self.action in ['update', 'partial_update']:
+        elif self.action in ['update', 'partial_update']:
             permissions = [IsAccountOwner, IsAuthenticated]
         else:
             permissions = [IsAuthenticated]
@@ -66,7 +64,7 @@ class UserViewSet(viewsets.GenericViewSet,
         response = super(UserViewSet, self).list(request, *args, **kwargs)
         return response
 
-    """ User's login view"""
+    """ User's login view """
     @action(detail=False, methods=['post'])
     def login(self, request):
         serializer = LoginSerializer(data=request.data)
@@ -110,4 +108,30 @@ class UserViewSet(viewsets.GenericViewSet,
         data = UserModelSerializer(user).data
         return Response(data)
 
+class UserAlbumViewSet(viewsets.GenericViewSet,
+                       mixins.ListModelMixin,
+                       mixins.DestroyModelMixin):
 
+    serializer_class = UserModelSerializer
+
+    def dispatch(self, request, *args, **kwargs):
+        username = kwargs['username']
+        self.user = get_object_or_404(
+            User,
+            username=username
+        )
+        return super(UserAlbumViewSet, self).dispatch(request, *args, **kwargs)
+
+    def list(self, request, *args, **kwargs):
+        user = request.user
+        albums = Album.objects.filter(sold_by=user)
+        data = {
+            'albums': AlbumModelSerializer(albums, many=True).data
+        }
+        return Response(data)
+
+    def destroy(self, request, *args, **kwargs):
+        user = request.user
+        albums = Album.objects.filter(sold_by=user)
+        albums.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)

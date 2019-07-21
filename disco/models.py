@@ -20,7 +20,6 @@ class Album(DiscotiendaModel):
     price = models.FloatField()
     sold_by = models.ManyToManyField('users.User', related_name='album_sold_by')
 
-    quantities = models.IntegerField(default=1)
     sold_unities = models.IntegerField(default=0)
 
     digital = models.BooleanField(default=False)

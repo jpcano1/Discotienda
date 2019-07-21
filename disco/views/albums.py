@@ -25,6 +25,7 @@ class AlbumViewSet(viewsets.GenericViewSet,
     def perform_create(self, serializer):
         serializer.save()
 
+    """ Album Detail"""
     def retrieve(self, request, *args, **kwargs):
         response = super(AlbumViewSet, self).retrieve(request, *args, **kwargs)
         album = Album.objects.get(title=response.data['title'])
