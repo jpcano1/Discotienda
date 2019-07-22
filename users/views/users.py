@@ -22,7 +22,7 @@ from disco.serializers import AlbumModelSerializer
 # Permissions
 from rest_framework.permissions import (AllowAny,
                                         IsAuthenticated)
-from users.permissions import IsAccountOwner
+from users.permissions import IsAccountOwner, IsAlbumAccountOwner
 
 """ User viewset in which I'm going to make the views for a
 CRUD system for users based on permissions, handles signup,
@@ -110,20 +110,28 @@ class UserViewSet(viewsets.GenericViewSet,
 
 class UserAlbumViewSet(viewsets.GenericViewSet,
                        mixins.ListModelMixin,
-                       mixins.DestroyModelMixin):
+                       mixins.DestroyModelMixin,
+                       mixins.CreateModelMixin):
 
     serializer_class = UserModelSerializer
 
+    def get_permissions(self):
+        if self.action in ['create', 'list']:
+            permissions = [IsAlbumAccountOwner]
+        else:
+            permissions = [IsAuthenticated]
+        return [p() for p in permissions]
+
     def dispatch(self, request, *args, **kwargs):
-        username = kwargs['username']
+        id = kwargs['id']
         self.user = get_object_or_404(
             User,
-            username=username
+            id=id
         )
         return super(UserAlbumViewSet, self).dispatch(request, *args, **kwargs)
 
     def list(self, request, *args, **kwargs):
-        user = request.user
+        user = self.user
         albums = Album.objects.filter(sold_by=user)
         data = {
             'albums': AlbumModelSerializer(albums, many=True).data
@@ -131,7 +139,11 @@ class UserAlbumViewSet(viewsets.GenericViewSet,
         return Response(data)
 
     def destroy(self, request, *args, **kwargs):
-        user = request.user
+        user = self.user
         albums = Album.objects.filter(sold_by=user)
         albums.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
+
+    def create(self, request, *args, **kwargs):
+        request.data['sold_by'] = self.user
+        return Response({'hola': 'hola'})

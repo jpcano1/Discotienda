@@ -12,13 +12,14 @@ class Album(DiscotiendaModel):
      and to the songs in it
      """
 
+    id = models.AutoField(primary_key=True)
     title = models.CharField(max_length=255)
     artist = models.CharField(max_length=255)
     genre = models.CharField(max_length=20)
     cover = models.ImageField(upload_to='album/covers/', null=True, blank=True)
 
     price = models.FloatField()
-    sold_by = models.ManyToManyField('users.User', related_name='album_sold_by')
+    sold_by = models.ForeignKey('users.User', related_name='album_sold_by', on_delete=models.CASCADE)
 
     sold_unities = models.IntegerField(default=0)
 

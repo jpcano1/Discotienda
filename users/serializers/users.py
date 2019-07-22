@@ -125,7 +125,7 @@ class UserSignUpSerializer(serializers.Serializer):
     def create(self, data):
         data.pop('password_confirmation')
         user = User.objects.create_user(**data)
-        print("¿El usuario está verificado?", user.is_verified)
+        # print("¿El usuario está verificado?", user.is_verified)
         Profile.objects.create(user=user)
         self.send_confirmation_email(user)
         return user
@@ -168,9 +168,11 @@ class UserModelSerializer(serializers.ModelSerializer):
     """ Meta class """
     class Meta:
         model = User
-        fields = ('username',
+        fields = ('id',
+                  'username',
                   'first_name',
                   'last_name',
                   'email',
                   'phone_number',
-                  'profile')
+                  'profile',
+                  )
