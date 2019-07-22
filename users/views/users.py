@@ -39,7 +39,7 @@ class UserViewSet(viewsets.GenericViewSet,
     def get_permissions(self):
         if self.action in ['signup', 'login', 'verify']:
             permissions = [AllowAny]
-        elif self.action in ['update', 'partial_update']:
+        elif self.action in ['update', 'partial_update', 'profile']:
             permissions = [IsAccountOwner, IsAuthenticated]
         else:
             permissions = [IsAuthenticated]
@@ -113,25 +113,25 @@ class UserAlbumViewSet(viewsets.GenericViewSet,
                        mixins.DestroyModelMixin,
                        mixins.CreateModelMixin):
 
-    serializer_class = UserModelSerializer
+    serializer_class = AlbumModelSerializer
 
     def get_permissions(self):
-        if self.action in ['create', 'list']:
+        if self.action in ['create', 'list', 'destroy']:
             permissions = [IsAlbumAccountOwner]
         else:
             permissions = [IsAuthenticated]
         return [p() for p in permissions]
 
-    def dispatch(self, request, *args, **kwargs):
-        id = kwargs['id']
-        self.user = get_object_or_404(
-            User,
-            id=id
-        )
-        return super(UserAlbumViewSet, self).dispatch(request, *args, **kwargs)
+    # def dispatch(self, request, *args, **kwargs):
+    #     id = kwargs['id']
+    #     self.user = get_object_or_404(
+    #         User,
+    #         id=id
+    #     )
+    #     return super(UserAlbumViewSet, self).dispatch(request, *args, **kwargs)
 
     def list(self, request, *args, **kwargs):
-        user = self.user
+        user = request.user
         albums = Album.objects.filter(sold_by=user)
         data = {
             'albums': AlbumModelSerializer(albums, many=True).data
@@ -139,11 +139,11 @@ class UserAlbumViewSet(viewsets.GenericViewSet,
         return Response(data)
 
     def destroy(self, request, *args, **kwargs):
-        user = self.user
+        user = request.user
         albums = Album.objects.filter(sold_by=user)
         albums.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
 
-    def create(self, request, *args, **kwargs):
-        request.data['sold_by'] = self.user
-        return Response({'hola': 'hola'})
+    def perform_create(self, serializer):
+        print(serializer)
+        serializer.save()
