@@ -20,7 +20,6 @@ from rest_framework.permissions import AllowAny, IsAuthenticated
 
 """ Circle View set"""
 class AlbumViewSet(viewsets.GenericViewSet,
-                   mixins.CreateModelMixin,
                    mixins.ListModelMixin,
                    mixins.RetrieveModelMixin,
                    mixins.DestroyModelMixin
@@ -40,10 +39,6 @@ class AlbumViewSet(viewsets.GenericViewSet,
         else:
             permissions = []
         return [p() for p in permissions]
-
-    """ The method that performs the save-object-method """
-    def perform_create(self, serializer):
-        serializer.save()
 
     """ Album Detail"""
     def retrieve(self, request, *args, **kwargs):
