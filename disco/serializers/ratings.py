@@ -12,9 +12,9 @@ class AlbumRatingModelSerializer(serializers.ModelSerializer):
     """ Meta Class """
     class Meta:
         model = AlbumRating
-        fields = (
-            'rating_user',
-            'rating',
-            'comments'
-        )
+        fields = ('id',
+                  'rating_user',
+                  'rating',
+                  'comments'
+                  )
         # read_only_fields = '__all__'

@@ -21,9 +21,7 @@ from rest_framework.permissions import AllowAny, IsAuthenticated
 """ Circle View set"""
 class AlbumViewSet(viewsets.GenericViewSet,
                    mixins.ListModelMixin,
-                   mixins.RetrieveModelMixin,
-                   mixins.DestroyModelMixin
-                   ):
+                   mixins.RetrieveModelMixin):
 
     queryset = Album.objects.all()
     serializer_class = AlbumModelSerializer
@@ -51,9 +49,4 @@ class AlbumViewSet(viewsets.GenericViewSet,
             'songs': SongModelSerializer(songs, many=True).data
         }
         response.data = data
-        return response
-
-    """ Allows to delete the detail of the album """
-    def destroy(self, request, *args, **kwargs):
-        response = super(AlbumViewSet, self).destroy(request, *args, *kwargs)
         return response

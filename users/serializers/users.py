@@ -4,8 +4,8 @@
 from django.conf import settings
 from django.contrib.auth import authenticate, password_validation
 from django.core.validators import RegexValidator
-from django.core.mail import EmailMultiAlternatives
-from django.template.loader import render_to_string
+# from django.core.mail import EmailMultiAlternatives
+# from django.template.loader import render_to_string
 
 # Django Rest framework
 from rest_framework import serializers

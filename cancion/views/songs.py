@@ -10,12 +10,8 @@ from cancion.models import Song, SongRating
 from cancion.serializers import SongModelSerializer
 
 """ Song view set that allows me create a song, that's the only thing needed """
-class SongViewSet(viewsets.GenericViewSet,
-                  mixins.CreateModelMixin):
+class SongViewSet(viewsets.GenericViewSet):
     """"""
 
     queryset = Song.objects.all()
     serializer_class = SongModelSerializer
-
-    def perform_create(self, serializer):
-        serializer.save()

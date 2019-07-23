@@ -8,6 +8,6 @@ class IsCreatorPermission(BasePermission):
 
     """ Gives Permission to the creator of the album """
     def has_object_permission(self, request, view, obj):
-        if request.user == obj.sold_by:
+        if request.user == obj.sold_by and request.user.is_verified:
             return True
         return False
