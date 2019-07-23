@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09169dd3-8a23-41c0-81f9-0fecf35f81b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cancion/serializers/ratings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cancion/serializers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/cancion/serializers/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cancion/serializers/songs.py" beforeDir="false" afterPath="$PROJECT_DIR$/cancion/serializers/songs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cancion/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/cancion/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cancion/views/songs.py" beforeDir="false" afterPath="$PROJECT_DIR$/cancion/views/songs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/disco/permissions/albums.py" beforeDir="false" afterPath="$PROJECT_DIR$/disco/permissions/albums.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/disco/serializers/albums.py" beforeDir="false" afterPath="$PROJECT_DIR$/disco/serializers/albums.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/disco/serializers/ratings.py" beforeDir="false" afterPath="$PROJECT_DIR$/disco/serializers/ratings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/disco/views/albums.py" beforeDir="false" afterPath="$PROJECT_DIR$/disco/views/albums.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/permissions/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/permissions/users.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/serializers/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/serializers/users.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/views/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views/users.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discotienda/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/discotienda/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,8 +33,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/users/views/users.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="135" column="13" lean-forward="true" selection-start-line="135" selection-start-column="13" selection-end-line="135" selection-end-column="13" />
+            <state relative-caret-position="330">
+              <caret line="72" column="27" selection-start-line="72" selection-start-column="27" selection-end-line="72" selection-end-column="27" />
               <folding>
                 <element signature="e#45#96#0" expanded="true" />
               </folding>
@@ -56,10 +43,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="498">
+              <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/discotienda/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="30" column="40" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
+              <folding>
+                <element signature="e#312#321#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cancion/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="14" column="15" lean-forward="true" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+            <state relative-caret-position="240">
+              <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
               <folding>
                 <element signature="e#46#94#0" expanded="true" />
               </folding>
@@ -70,7 +78,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cancion/serializers/songs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
+            <state relative-caret-position="510">
               <caret line="21" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="e#52#90#0" expanded="true" />
@@ -82,7 +90,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/users/permissions/users.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
+            <state relative-caret-position="1020">
               <caret line="38" selection-start-line="38" selection-end-line="38" />
               <folding>
                 <element signature="e#50#88#0" expanded="true" />
@@ -141,7 +149,6 @@
         <option value="$PROJECT_DIR$/users/serializers/profiles.py" />
         <option value="$PROJECT_DIR$/disco/models.py" />
         <option value="$PROJECT_DIR$/disco/permissions/__init__.py" />
-        <option value="$PROJECT_DIR$/discotienda/settings.py" />
         <option value="$PROJECT_DIR$/cancion/urls.py" />
         <option value="$PROJECT_DIR$/cancion/views/songs.py" />
         <option value="$PROJECT_DIR$/disco/permissions/albums.py" />
@@ -154,15 +161,15 @@
         <option value="$PROJECT_DIR$/cancion/serializers/songs.py" />
         <option value="$PROJECT_DIR$/disco/views/albums.py" />
         <option value="$PROJECT_DIR$/users/permissions/users.py" />
+        <option value="$PROJECT_DIR$/discotienda/settings.py" />
         <option value="$PROJECT_DIR$/users/views/users.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="98" />
-    <option name="y" value="27" />
-    <option name="width" value="1717" />
-    <option name="height" value="920" />
+    <option name="x" value="1920" />
+    <option name="width" value="1920" />
+    <option name="height" value="1029" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -172,6 +179,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -182,19 +190,18 @@
             <path>
               <item name="discotienda" type="b2602c69:ProjectViewProjectNode" />
               <item name="discotienda" type="462c0819:PsiDirectoryNode" />
-              <item name="cancion" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="discotienda" type="b2602c69:ProjectViewProjectNode" />
               <item name="discotienda" type="462c0819:PsiDirectoryNode" />
-              <item name="cancion" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -262,16 +269,17 @@
       <workItem from="1563819947363" duration="603000" />
       <workItem from="1563826797325" duration="12405000" />
       <workItem from="1563845027058" duration="3269000" />
+      <workItem from="1563861738618" duration="1084000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71546000" />
+    <option name="totallyTimeSpent" value="72630000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1920" height="1002" extended-state="6" />
+    <frame x="1920" y="0" width="1920" height="1029" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.123667374" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12473348" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32911393" />
@@ -284,7 +292,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32924107" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3296582" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.21749137" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.21763393" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32924107" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -355,13 +363,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="93">
           <caret line="3" column="31" lean-forward="true" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -477,16 +478,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/discotienda/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="716">
-          <caret line="164" column="6" selection-start-line="164" selection-start-column="6" selection-end-line="164" selection-end-column="6" />
-          <folding>
-            <element signature="e#312#321#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/disco/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
@@ -596,27 +587,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cancion/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="14" column="15" lean-forward="true" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+        <state relative-caret-position="240">
+          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
           <folding>
             <element signature="e#46#94#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/users/permissions/users.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="e#50#88#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cancion/serializers/songs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
+        <state relative-caret-position="510">
           <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="e#52#90#0" expanded="true" />
@@ -624,10 +605,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/users/permissions/users.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="e#50#88#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/discotienda/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="30" column="40" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
+          <folding>
+            <element signature="e#312#321#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/users/views/users.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="135" column="13" lean-forward="true" selection-start-line="135" selection-start-column="13" selection-end-line="135" selection-end-column="13" />
+        <state relative-caret-position="330">
+          <caret line="72" column="27" selection-start-line="72" selection-start-column="27" selection-end-line="72" selection-end-column="27" />
           <folding>
             <element signature="e#45#96#0" expanded="true" />
           </folding>
