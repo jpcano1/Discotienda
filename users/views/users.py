@@ -36,7 +36,7 @@ class UserViewSet(viewsets.GenericViewSet,
                   mixins.UpdateModelMixin):
     queryset = User.objects.filter(is_active=True)
     serializer_class = UserModelSerializer
-    lookup_field = 'username'
+    lookup_field = 'id'
 
     """ Method that defines permission for each action """
     def get_permissions(self):
