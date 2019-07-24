@@ -31,11 +31,8 @@ class AlbumModelSerializer(serializers.ModelSerializer):
             'ratings'
         )
 
-    # def validate_title(self, data):
-    #     album = Album.objects.filter(title=data)
-    #     if album:
-    #         raise serializers.ValidationError("Este album ya existe")
-    #     return data
+        read_only_fields = ('ratings',
+                            'sold_by')
 
 """ Serializer class that allows me to create an album """
 class CreateAlbumSerializer(serializers.Serializer):

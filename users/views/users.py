@@ -40,9 +40,9 @@ class UserViewSet(viewsets.GenericViewSet,
 
     """ Method that defines permission for each action """
     def get_permissions(self):
-        if self.action in ['signup', 'login', 'verify']:
+        if self.action in ['signup', 'login', 'verify', 'profile']:
             permissions = [AllowAny]
-        elif self.action in ['update', 'partial_update', 'profile']:
+        elif self.action in ['update', 'partial_update', 'retrieve']:
             permissions = [IsAccountOwner, IsAuthenticated]
         else:
             permissions = [IsAuthenticated]
@@ -52,7 +52,7 @@ class UserViewSet(viewsets.GenericViewSet,
     def retrieve(self, request, *args, **kwargs):
         response = super(UserViewSet, self).retrieve(request, *args, **kwargs)
         albums = Album.objects.filter(
-            sold_by=request.user
+            sold_by=response.data['id']
         )
 
         data = {
@@ -99,8 +99,8 @@ class UserViewSet(viewsets.GenericViewSet,
         return Response(data, status=status.HTTP_201_CREATED)
 
     """ Method that allow to profile-owner to update its information """
-    @action(detail=True, methods=['put', 'patch'])
-    def profile(self, request, *args, **kwargs):
+    # @action(detail=True, methods=['put', 'patch', 'get'])
+    def update(self, request, *args, **kwargs):
         user = self.get_object()
         profile = user.profile
         partial = request.method == 'PATCH'
@@ -112,6 +112,16 @@ class UserViewSet(viewsets.GenericViewSet,
         serializer.is_valid(raise_exception=True)
         serializer.save()
         data = UserModelSerializer(user).data
+        return Response(data)
+
+    @action(detail=True, methods=['get'])
+    def profile(self, request, *args, **kwargs):
+        user = self.get_object()
+        albums = Album.objects.filter(sold_by=user)
+        data = {
+            'user': UserModelSerializer(user).data,
+            'albums': AlbumModelSerializer(albums, many=True).data
+        }
         return Response(data)
 
 """ Thi view set is defined to allow users to create, read, update and destroy his albums """

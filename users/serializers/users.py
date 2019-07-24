@@ -14,6 +14,7 @@ from rest_framework.validators import UniqueValidator
 
 # Serializers
 from users.serializers.profiles import ProfileModelSerializer
+from disco.serializers import AlbumModelSerializer
 
 # Models
 from users.models import User, Profile

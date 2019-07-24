@@ -14,6 +14,12 @@ class IsAccountOwner(permissions.BasePermission):
     def has_object_permission(self, request, view, obj):
         return request.user == obj and request.user.is_verified
 
+    def has_permission(self, request, view):
+        if request.user.id == int(view.kwargs['id']):
+            return True
+        else:
+            return False
+
 """ This permission class is defined to allow users to access their albums
 if they are the owners 
 """
