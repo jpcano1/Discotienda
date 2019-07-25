@@ -7,7 +7,7 @@ from rest_framework.response import Response
 from rest_framework.generics import get_object_or_404
 
 # Models
-from users.models import User
+from users.models import User, Profile
 from disco.models import Album
 from cancion.models import Song
 
@@ -32,18 +32,15 @@ login, verify account etc...
 """
 class UserViewSet(viewsets.GenericViewSet,
                   mixins.RetrieveModelMixin,
-                  mixins.ListModelMixin,
-                  mixins.UpdateModelMixin):
+                  mixins.ListModelMixin):
     queryset = User.objects.filter(is_active=True)
     serializer_class = UserModelSerializer
     lookup_field = 'id'
 
     """ Method that defines permission for each action """
     def get_permissions(self):
-        if self.action in ['signup', 'login', 'verify', 'profile']:
+        if self.action in ['signup', 'login', 'verify', 'list', 'retrieve']:
             permissions = [AllowAny]
-        elif self.action in ['update', 'partial_update', 'retrieve']:
-            permissions = [IsAccountOwner, IsAuthenticated]
         else:
             permissions = [IsAuthenticated]
         return [p() for p in permissions]
@@ -54,7 +51,6 @@ class UserViewSet(viewsets.GenericViewSet,
         albums = Album.objects.filter(
             sold_by=response.data['id']
         )
-
         data = {
             'user': response.data,
             'albums': AlbumModelSerializer(albums, many=True).data
@@ -99,7 +95,54 @@ class UserViewSet(viewsets.GenericViewSet,
         return Response(data, status=status.HTTP_201_CREATED)
 
     """ Method that allow to profile-owner to update its information """
-    # @action(detail=True, methods=['put', 'patch', 'get'])
+    # def update(self, request, *args, **kwargs):
+    #     user = self.get_object()
+    #     profile = user.profile
+    #     partial = request.method == 'PATCH'
+    #     serializer = ProfileModelSerializer(
+    #         profile,
+    #         data=request.data,
+    #         partial=partial
+    #     )
+    #     serializer.is_valid(raise_exception=True)
+    #     serializer.save()
+    #     data = UserModelSerializer(user).data
+    #     return Response(data)
+
+    # @action(detail=True, methods=['get'])
+    # def profile(self, request, *args, **kwargs):
+    #     user = self.get_object()
+    #     albums = Album.objects.filter(sold_by=user)
+    #     data = {
+    #         'user': UserModelSerializer(user).data,
+    #         'albums': AlbumModelSerializer(albums, many=True).data
+    #     }
+    #     return Response(data)
+
+class ProfileViewSet(viewsets.GenericViewSet,
+                     mixins.UpdateModelMixin,
+                     mixins.RetrieveModelMixin):
+
+    queryset = User.objects.all()
+    serializer_class = UserModelSerializer
+    lookup_field = 'id'
+
+    def get_permissions(self):
+        if self.action in ['update', 'partial_update', 'retrieve']:
+            permissions = [IsAccountOwner, IsAuthenticated]
+        else:
+            permissions = [IsAuthenticated]
+        return [p() for p in permissions]
+
+    def retrieve(self, request, *args, **kwargs):
+        user = self.get_object()
+        albums = Album.objects.filter(sold_by=user)
+        data = {
+            'user': UserModelSerializer(user).data,
+            'albums': AlbumModelSerializer(albums, many=True).data
+        }
+        return Response(data)
+
     def update(self, request, *args, **kwargs):
         user = self.get_object()
         profile = user.profile
@@ -112,16 +155,6 @@ class UserViewSet(viewsets.GenericViewSet,
         serializer.is_valid(raise_exception=True)
         serializer.save()
         data = UserModelSerializer(user).data
-        return Response(data)
-
-    @action(detail=True, methods=['get'])
-    def profile(self, request, *args, **kwargs):
-        user = self.get_object()
-        albums = Album.objects.filter(sold_by=user)
-        data = {
-            'user': UserModelSerializer(user).data,
-            'albums': AlbumModelSerializer(albums, many=True).data
-        }
         return Response(data)
 
 """ Thi view set is defined to allow users to create, read, update and destroy his albums """
