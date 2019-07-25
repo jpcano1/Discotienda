@@ -112,6 +112,9 @@ class UserSignUpSerializer(serializers.Serializer):
     first_name = serializers.CharField(min_length=2, max_length=30)
     last_name = serializers.CharField(min_length=2, max_length=30)
 
+    # Image
+    picture = serializers.ImageField(required=False, default=None)
+
     def validate(self, data):
         passwd = data['password']
         passwd_confirmation = data['password_confirmation']
@@ -125,9 +128,13 @@ class UserSignUpSerializer(serializers.Serializer):
 
     def create(self, data):
         data.pop('password_confirmation')
+        imagen = None
+        if data['picture']:
+            imagen = data['picture']
+        data.pop('picture')
         user = User.objects.create_user(**data)
         # print("¿El usuario está verificado?", user.is_verified)
-        Profile.objects.create(user=user)
+        Profile.objects.create(user=user, picture=imagen)
         self.send_confirmation_email(user)
         return user
 
