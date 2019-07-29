@@ -4,8 +4,8 @@
 from django.conf import settings
 from django.contrib.auth import authenticate, password_validation
 from django.core.validators import RegexValidator
-# from django.core.mail import EmailMultiAlternatives
-# from django.template.loader import render_to_string
+from django.core.mail import EmailMultiAlternatives
+from django.template.loader import render_to_string
 
 # Django Rest framework
 from rest_framework import serializers
@@ -133,7 +133,6 @@ class UserSignUpSerializer(serializers.Serializer):
             imagen = data['picture']
         data.pop('picture')
         user = User.objects.create_user(**data)
-        # print("¿El usuario está verificado?", user.is_verified)
         Profile.objects.create(user=user, picture=imagen)
         self.send_confirmation_email(user)
         return user
@@ -141,20 +140,20 @@ class UserSignUpSerializer(serializers.Serializer):
     def send_confirmation_email(self, user):
         """ Send account verification link to given user """
         verification_token = self.gen_verification_token(user)
-        # subject = 'Welcome @{}! Verify your account to start using Comparte Ride'.format(user.username)
-        # from_email = 'Comparte Ride <noreply@comparteride.com>'
-        # content = render_to_string(
-        #     'emails/users/account_verification.html',
-        #     {
-        #         'token': verification_token,
-        #         'user': user
-        #     }
-        # )
-        # msg = EmailMultiAlternatives(subject, content, from_email, [user.email])
-        # msg.attach(content, 'text/html')
-        # msg.send()
-        # print("Sending email")
-        print(verification_token)
+        subject = 'Welcome @{}! Verify your account to start using Comparte Ride'.format(user.username)
+        from_email = 'Comparte Ride <noreply@comparteride.com>'
+        content = render_to_string(
+            'emails/users/account_verification.html',
+            {
+                'token': verification_token,
+                'user': user
+            }
+        )
+        msg = EmailMultiAlternatives(subject, content, from_email, [user.email])
+        msg.attach(content, 'text/html')
+        msg.send()
+        print("Sending email")
+        # print(verification_token)
 
     def gen_verification_token(self, user):
         """ create JWT token that the user can use to verify its account. """

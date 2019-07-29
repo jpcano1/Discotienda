@@ -53,7 +53,13 @@ THIRD_PARTY_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'corsheaders',
+    'anymail',
 ]
+
+# Email
+EMAIL_BACKEND = env('DJANGO_EMAIL_BACKEND', default='django.core.mail.backends.console.EmailBackend')
+EMAIL_HOST = 'localhost'
+EMAIL_PORT = 1025
 
 INSTALLED_APPS = THIRD_PARTY_APPS + LOCAL_APPS + DJANGO_APPS
 

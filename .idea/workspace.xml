@@ -2,9 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09169dd3-8a23-41c0-81f9-0fecf35f81b7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/views/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views/users.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/anymail/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/anymail/_email_compat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/anymail/_version.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/anymail/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/anymail/backends/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/anymail/backends/amazon_ses.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/anymail/backends/base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/anymail/backends/base_requests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/anymail/backends/console.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/anymail/backends/mailgun.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/anymail/backends/mailjet.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/anymail/backends/mandrill.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/anymail/backends/postmark.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/anymail/backends/sendgrid.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/anymail/backends/sendinblue.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/anymail/backends/sparkpost.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/anymail/backends/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/anymail/checks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/anymail/exceptions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/anymail/inbound.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/anymail/message.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/anymail/signals.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/anymail/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/anymail/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/anymail/webhooks/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/anymail/webhooks/amazon_ses.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/anymail/webhooks/base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/anymail/webhooks/mailgun.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/anymail/webhooks/mailjet.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/anymail/webhooks/mandrill.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/anymail/webhooks/postmark.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/anymail/webhooks/sendgrid.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/anymail/webhooks/sendinblue.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/anymail/webhooks/sparkpost.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/django_anymail-6.1.0.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/django_anymail-6.1.0.dist-info/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/django_anymail-6.1.0.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/django_anymail-6.1.0.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/django_anymail-6.1.0.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/django_anymail-6.1.0.dist-info/top_level.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discotienda/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/discotienda/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/serializers/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/serializers/users.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,46 +71,6 @@
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/users/views/users.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="146" column="32" lean-forward="true" selection-start-line="146" selection-start-column="32" selection-end-line="146" selection-end-column="32" />
-              <folding>
-                <element signature="e#45#96#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/users/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
-              <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-              <folding>
-                <element signature="e#28#65#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/users/permissions/users.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-49">
-              <caret line="14" column="34" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="34" />
-              <folding>
-                <element signature="e#50#88#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -86,88 +88,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/users/models/profile.py" />
-        <option value="$PROJECT_DIR$/users/models/memberships.py" />
-        <option value="$PROJECT_DIR$/users/apps.py" />
-        <option value="$PROJECT_DIR$/users/models/__init__.py" />
-        <option value="$PROJECT_DIR$/disco/apps.py" />
-        <option value="$PROJECT_DIR$/cancion/apps.py" />
-        <option value="$PROJECT_DIR$/utils/models.py" />
-        <option value="$PROJECT_DIR$/users/models/ratings.py" />
-        <option value="$PROJECT_DIR$/users/views/users.pyi" />
-        <option value="$PROJECT_DIR$/users/views/__init__.py" />
-        <option value="$PROJECT_DIR$/users/serializers/__init__.py" />
-        <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/templates/emails/users/account_verification_mail.html" />
-        <option value="$PROJECT_DIR$/templates/emails/users/account_verification.html" />
-        <option value="$PROJECT_DIR$/users/permissions/__init__.py" />
-        <option value="$PROJECT_DIR$/users/admin.py" />
-        <option value="$PROJECT_DIR$/cancion/models.py" />
-        <option value="$PROJECT_DIR$/disco/serializers/__init__.py" />
-        <option value="$PROJECT_DIR$/disco/serializers.py" />
-        <option value="$PROJECT_DIR$/disco/views.py" />
-        <option value="$PROJECT_DIR$/disco/urls.py" />
-        <option value="$PROJECT_DIR$/discotienda/urls.py" />
-        <option value="$PROJECT_DIR$/cancion/views/__init__.py" />
-        <option value="$PROJECT_DIR$/users/serializers/profiles.py" />
-        <option value="$PROJECT_DIR$/disco/models.py" />
-        <option value="$PROJECT_DIR$/disco/permissions/__init__.py" />
-        <option value="$PROJECT_DIR$/cancion/urls.py" />
-        <option value="$PROJECT_DIR$/cancion/views/songs.py" />
-        <option value="$PROJECT_DIR$/disco/permissions/albums.py" />
-        <option value="$PROJECT_DIR$/disco/serializers/ratings.py" />
-        <option value="$PROJECT_DIR$/cancion/serializers/ratings.py" />
-        <option value="$PROJECT_DIR$/cancion/serializers/__init__.py" />
-        <option value="$PROJECT_DIR$/disco/serializers/albums.py" />
-        <option value="$PROJECT_DIR$/cancion/serializers/songs.py" />
-        <option value="$PROJECT_DIR$/disco/views/albums.py" />
-        <option value="$PROJECT_DIR$/users/permissions/users.py" />
-        <option value="$PROJECT_DIR$/discotienda/settings.py" />
-        <option value="$PROJECT_DIR$/users/models/profiles.py" />
-        <option value="$PROJECT_DIR$/users/serializers/users.py" />
-        <option value="$PROJECT_DIR$/users/models/users.py" />
-        <option value="$PROJECT_DIR$/users/urls.py" />
-        <option value="$PROJECT_DIR$/users/views/users.py" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="192" />
-    <option name="y" value="27" />
-    <option name="width" value="1440" />
-    <option name="height" value="771" />
-  </component>
+  <component name="ProjectId" id="1OWnyYJ5pJ37obwoHMzz47TySPF" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="discotienda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="discotienda" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="discotienda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="discotienda" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
-  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -234,377 +160,31 @@
       <workItem from="1563845027058" duration="3269000" />
       <workItem from="1563861738618" duration="1084000" />
       <workItem from="1564016082072" duration="3628000" />
+      <workItem from="1564102482212" duration="48000" />
+      <workItem from="1564102542059" duration="7000" />
+      <workItem from="1564194721938" duration="28000" />
+      <workItem from="1564194761515" duration="226000" />
+      <workItem from="1564439706003" duration="1824000" />
     </task>
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76258000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1920" height="1002" extended-state="6" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12579957" />
-      <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32911393" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" weight="0.32988507" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32924107" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3296582" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.22439586" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32924107" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="R Graphics" order="4" weight="0.32995737" />
-      <window_info anchor="right" id="R Packages" order="5" weight="0.32995737" />
-      <window_info anchor="right" id="Database" order="6" weight="0.32995737" />
-      <window_info anchor="right" id="Structure" order="7" weight="0.25" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ModeloConceptual.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/migrations/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/models/memberships.py" />
-    <entry file="file://$PROJECT_DIR$/utils/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/models/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/disco/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cancion/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/models/ratings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="13" column="45" lean-forward="true" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
-          <folding>
-            <element signature="e#36#64#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/emails/users/account_verification.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="3" column="31" lean-forward="true" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/views/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="20" selection-start-column="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/permissions/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="20" selection-start-column="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/serializers/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
-          <folding>
-            <element signature="e#32#64#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/users/pictures/Imagen_CV_dcoi37B.jpg" />
-    <entry file="file://$PROJECT_DIR$/media/users/pictures/Imagen_CV.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/disco/serializers.py" />
-    <entry file="file://$PROJECT_DIR$/disco/views.py" />
-    <entry file="file://$PROJECT_DIR$/utils/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/discotienda/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="23" column="66" lean-forward="true" selection-start-line="23" selection-start-column="66" selection-end-line="23" selection-end-column="66" />
-          <folding>
-            <element signature="e#635#667#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cancion/views.py" />
-    <entry file="file://$PROJECT_DIR$/cancion/views/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="20" selection-start-column="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/disco/serializers/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/disco/permissions/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="21" selection-start-column="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/disco/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-          <folding>
-            <element signature="e#30#67#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/disco/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#30#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/disco/serializers/ratings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="18" column="19" lean-forward="true" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/disco/permissions/albums.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="10" column="67" selection-start-line="10" selection-start-column="67" selection-end-line="10" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cancion/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#31#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cancion/serializers/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cancion/serializers/ratings.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/serializers/profiles.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#117#155#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/disco/serializers/albums.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="41" column="10" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
-          <folding>
-            <element signature="e#50#88#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/disco/views/albums.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="632">
-          <caret line="51" column="23" lean-forward="true" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
-          <folding>
-            <element signature="e#45#88#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cancion/views/songs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
-          <folding>
-            <element signature="e#46#89#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/serializers/users.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1123">
-          <caret line="133" column="27" selection-start-line="133" selection-start-column="27" selection-end-line="133" selection-end-column="27" />
-          <folding>
-            <element signature="e#34#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/models/profiles.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="15" selection-end-column="19" />
-          <folding>
-            <element signature="e#33#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/models/users.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-          <folding>
-            <element signature="e#136#164#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/discotienda/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="30" column="40" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
-          <folding>
-            <element signature="e#312#321#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cancion/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#46#94#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cancion/serializers/songs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="e#52#90#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-          <folding>
-            <element signature="e#28#65#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/permissions/users.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-49">
-          <caret line="14" column="34" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="34" />
-          <folding>
-            <element signature="e#50#88#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/views/users.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="146" column="32" lean-forward="true" selection-start-line="146" selection-start-column="32" selection-end-line="146" selection-end-column="32" />
-          <folding>
-            <element signature="e#45#96#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
