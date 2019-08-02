@@ -29,5 +29,11 @@
         <property name="enable_load_extension" value="true" />
       </driver-properties>
     </data-source>
+    <data-source source="LOCAL" name="discotienda" uuid="f2795574-80ec-4a15-a312-ca14d24d54e8">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/discotienda</jdbc-url>
+    </data-source>
   </component>
 </project>

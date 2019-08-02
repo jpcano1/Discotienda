@@ -27,3 +27,6 @@ django-cors-headers>=3.0.2
 
 # Anymail
 django-anymail[mailgun] >= 6.1.0
+
+# Postgresql connection
+psycopg2>=2.8.3

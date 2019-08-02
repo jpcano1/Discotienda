@@ -101,8 +101,13 @@ WSGI_APPLICATION = 'discotienda.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': 'discotienda',
+        'USER': 'jpcano1',
+        'PASSWORD': 'm3T411Um',
+        'HOST': 'localhost',
+        'PORT': '5432'
     }
 }
 
