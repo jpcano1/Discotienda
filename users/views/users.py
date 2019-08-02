@@ -88,6 +88,7 @@ class UserViewSet(viewsets.GenericViewSet,
     """ Creates an user in the database with is_verified value = False """
     @action(detail=False, methods=['post'])
     def signup(self, request):
+        print(request.data)
         serializer = UserSignUpSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         user = serializer.save()
